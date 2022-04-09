@@ -26,11 +26,11 @@ Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Andr
 
 ## TODO
 
-- [ ] Run `adb` commands from Python
-- [ ] Enable wifi hotspot from `adb`
-- [ ] Disable wifi hotspot from `adb``adb`
-- [ ] Enable proxy server with from `adb`
-- [ ] Disable proxy server with from `adb`
+- [X] Run `adb` commands from Python
+- [X] Enable wifi hotspot from `adb`
+- [X] Disable wifi hotspot from `adb``adb`
+- [X] Enable proxy server from `adb`
+- [X] Disable proxy server from `adb`
 - [ ] Run Gnirehtet from Python
 - [ ] Cleanup Gnirehtet on android side
 - [ ] Working Windows prototype
