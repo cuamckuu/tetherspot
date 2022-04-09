@@ -28,9 +28,10 @@ def main():
     is_hotspot_enabled = is_wifi_hotspot_enabled()
     print('WiFi hotspot status:', is_hotspot_enabled)
 
-    if not is_hotspot_enabled:
-        print('Enabling WiFi hotspot')
+    while not is_hotspot_enabled:
+        print('Try enabling WiFi hotspot')
         toggle_wifi_hotspot()
+        is_hotspot_enabled = is_wifi_hotspot_enabled()
 
     print()
     print('Disabling mobile data to ensure VPN sharing')
@@ -65,9 +66,11 @@ def main():
     is_hotspot_enabled = is_wifi_hotspot_enabled()
     print('WiFi hotspot status:', is_hotspot_enabled)
 
-    if is_hotspot_enabled:
-        print('Disabling WiFi hotspot')
+    while is_hotspot_enabled:
+        print()
+        print('Try disabling WiFi hotspot')
         toggle_wifi_hotspot()
+        is_hotspot_enabled = is_wifi_hotspot_enabled()
 
     print()
     print('Enabling mobile data')

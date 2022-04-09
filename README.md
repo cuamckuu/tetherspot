@@ -61,7 +61,7 @@ python main.py
 - [ ] Write own Android proxy server (TCP, UDP, IPv6, netty, ktor)
 - [ ] Get relative path to `__file__` location
 - [ ] Use logging instead of prints
-- [ ] Add run flags for diffirent behaviour. Ex: `--lock`, `--install`, etc
+- [ ] Add run flags for diffirent behaviour. Ex: `--lock`, `--install`, `--hotspot_row`, etc
 - [ ] Maybe auto screen unlock?
 
 Notes:
