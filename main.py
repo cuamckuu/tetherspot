@@ -1,4 +1,5 @@
-from tetherspot.adb import (is_package_running, is_wifi_hotspot_enabled,
+import time
+from tetherspot.adb import (is_package_running, is_screen_on, is_unlocked, is_wifi_hotspot_enabled, press_power_button,
                             start_everyproxy, stop_everyproxy,
                             toggle_wifi_hotspot)
 
@@ -6,6 +7,14 @@ from tetherspot.gnirehtet import run_gnirehtet_pc, stop_gnirehtet_android
 
 
 def main():
+    while not is_unlocked():
+        print('Unlock screen\n')
+
+        if not is_screen_on():
+            press_power_button()
+
+        time.sleep(3)
+
     print('(Re)starting EveryProxy')
     stop_everyproxy()
     start_everyproxy()

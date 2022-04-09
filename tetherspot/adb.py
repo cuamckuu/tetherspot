@@ -47,3 +47,26 @@ def is_wifi_hotspot_enabled():
 
     match = re.search(f'{pattern} - TetheredState', output)
     return (match is not None)
+
+
+def is_screen_on():
+    out = run_adb('shell dumpsys window').stdout.decode()
+
+    display_blocker = ('mAwake=true' in out)
+    wake_lock = ('mShowingLockscreen=true' in out)
+
+    return (display_blocker, wake_lock) != (False, False)
+
+
+def is_unlocked():
+    out = run_adb('shell dumpsys window').stdout.decode()
+
+    dream = ('mShowingDream=true' in out)
+    lock = ('mDreamingLockscreen=true' in out)
+
+    return (dream, lock) == (False, False)
+
+
+def press_power_button():
+    run_adb('shell input keyevent KEYCODE_POWER')
+    time.sleep(1)

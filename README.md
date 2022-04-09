@@ -51,10 +51,17 @@ python main.py
 - [X] Run Gnirehtet from Python
 - [X] Cleanup Gnirehtet on android side
 - [X] Working Windows prototype
-- [ ] Check that device unlocked
+- [X] Check that device unlocked
+- [ ] Lock screen after start of Gnirehtet
+- [ ] Unlock screen before cleanup
 - [ ] Disable mobile network to ensure reverse tethering works
 - [ ] Determine OS version to get propper Gnirehtet
 - [ ] Install EveryProxy if needed
 - [ ] Install ADB if needed
 - [ ] Write own Android proxy server (TCP, UDP, IPv6, netty, ktor)
 - [ ] Get relative path to `__file__` location
+
+Notes:
+
+- toggle mobile data: https://stackoverflow.com/questions/23528824/is-there-an-adb-command-to-enable-disable-mobile-datarooted-device
+- is mobile data on: https://stackoverflow.com/questions/28537468/getting-cellular-network-status-via-adb-shell
