@@ -31,11 +31,14 @@ def stop_everyproxy():
 
 def toggle_wifi_hotspot():
     run_adb('shell am start -S com.android.settings/.TetherSettings')
+    time.sleep(2)
     run_adb('shell input keyevent KEYCODE_DPAD_UP')
+    time.sleep(0.2)
     run_adb('shell input keyevent KEYCODE_DPAD_DOWN')
+    time.sleep(0.2)
     run_adb('shell input keyevent KEYCODE_ENTER')
     run_adb('shell input keyevent KEYCODE_HOME')
-    time.sleep(2)
+    time.sleep(1)
 
 
 def is_wifi_hotspot_enabled():
