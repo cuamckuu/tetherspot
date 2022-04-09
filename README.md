@@ -4,6 +4,10 @@ Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Andr
 
 ![diagram](./assets/diagram.drawio.png)
 
+## Why
+
+To share unlimited wired network from PC to laptop and iPad instead of sharing 4G with limited monthly traffic.
+
 ## Idea
 
 - Use [Gnirehtet](https://github.com/Genymobile/gnirehtet) on PC to start reverse USB tethering
@@ -13,9 +17,9 @@ Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Andr
 
 ## `Tetherspot` could automate this process by
 
-- Downloading and installing `adb` if needed
-- Downloading and installing propper Gnirehtet version
-- Downloading and installing EveryProxy apk
+- ~~Downloading and installing `adb` if needed~~ (Not yet)
+- ~~Downloading and installing propper Gnirehtet version~~ (Not yet)
+- ~~Downloading and installing EveryProxy apk~~ (Not yet)
 - Starting/stopping Gnirehtet, Every Proxy and WiFi hotspot in one command
 
 ## Usage
@@ -30,8 +34,6 @@ cd ./tetherspot
 # Unlock your phone and connect it via USB with allowed USB debugging
 python main.py
 ```
-
----
 
 ## TODO
 
@@ -49,3 +51,4 @@ python main.py
 - [ ] Install EveryProxy if needed
 - [ ] Install ADB if needed
 - [ ] Write own Android proxy server (TCP, UDP, IPv6, netty, ktor)
+- [ ] Get relative path to `__file__` location
