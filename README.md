@@ -52,16 +52,21 @@ python main.py
 - [X] Cleanup Gnirehtet on android side
 - [X] Working Windows prototype
 - [X] Check that device unlocked
-- [ ] Lock screen after start of Gnirehtet
-- [ ] Unlock screen before cleanup
+- [X] Lock screen after start of Gnirehtet
+- [X] Unlock screen before cleanup
 - [ ] Disable mobile network to ensure reverse tethering works
 - [ ] Determine OS version to get propper Gnirehtet
 - [ ] Install EveryProxy if needed
 - [ ] Install ADB if needed
 - [ ] Write own Android proxy server (TCP, UDP, IPv6, netty, ktor)
 - [ ] Get relative path to `__file__` location
+- [ ] Use logging instead of prints
+- [ ] Add run flags for diffirent behaviour. Ex: `--lock`, `--install`, etc
+- [ ] Maybe auto screen unlock?
 
 Notes:
 
 - toggle mobile data: https://stackoverflow.com/questions/23528824/is-there-an-adb-command-to-enable-disable-mobile-datarooted-device
 - is mobile data on: https://stackoverflow.com/questions/28537468/getting-cellular-network-status-via-adb-shell
+- is package installed: https://stackoverflow.com/questions/20911231/android-how-to-know-if-any-application-is-already-installed-in-android-device-u
+

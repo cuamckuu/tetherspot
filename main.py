@@ -31,7 +31,17 @@ def main():
 
     print()
     print('Starting Gniregtet')
+    if True: # TODO: If gnirehtet installed
+        press_power_button()
     run_gnirehtet_pc()
+
+    while not is_unlocked():
+        print('\nUnlock screen')
+
+        if not is_screen_on():
+            press_power_button()
+
+        time.sleep(3)
 
     print()
     print('Stopping Gniregtet')
