@@ -2,7 +2,13 @@
 
 Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Android
 
+Schematic:
+
 ![diagram](./assets/diagram.drawio.png)
+
+Demo:
+
+![demo](./assets/demo.gif)
 
 ## Why
 
