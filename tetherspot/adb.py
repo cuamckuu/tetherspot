@@ -73,3 +73,13 @@ def is_unlocked():
 def press_power_button():
     run_adb('shell input keyevent KEYCODE_POWER')
     time.sleep(1)
+
+
+def enable_mobile_data():
+    run_adb('shell svc data enable')
+    time.sleep(1)
+
+
+def disable_mobile_data():
+    run_adb('shell svc data disable')
+    time.sleep(1)
