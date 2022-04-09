@@ -20,7 +20,16 @@ Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Andr
 
 ## Usage
 
-> Work in progress
+- **Work In Progress!**
+- Current version has only win64 Gnirehter binaries, so on linux/macOS you should add propper Gnirehtet version to PATH yourself
+- Current version don't yet install Every Proxy, so install it manually from [Google Play](https://play.google.com/store/apps/details?id=com.gorillasoftware.everyproxy&hl=en&gl=US)
+
+```bash
+git clone https://github.com/cuamckuu/tetherspot.git
+cd ./tetherspot
+# Unlock your phone and connect it via USB with allowed USB debugging
+python main.py
+```
 
 ---
 
@@ -32,10 +41,10 @@ Script to simlify reverse USB tethering with WiFi hotspot on **non-rooted** Andr
 - [X] Enable proxy server from `adb`
 - [X] Disable proxy server from `adb`
 - [X] Run Gnirehtet from Python
-- [ ] Check that device unlocked
-- [ ] Disable mobile network to ensure reverse tethering works
 - [X] Cleanup Gnirehtet on android side
 - [X] Working Windows prototype
+- [ ] Check that device unlocked
+- [ ] Disable mobile network to ensure reverse tethering works
 - [ ] Determine OS version to get propper Gnirehtet
 - [ ] Install EveryProxy if needed
 - [ ] Install ADB if needed
